@@ -6,7 +6,7 @@ This repository contains the evaluation pipeline for EMOO on imbalanced medical 
 2. Pima Indians Diabetes
 3. Mammographic Mass
 
-The core EMOO / NSGA-II optimization method is maintained separately in the original repository. This repository focuses on dataset-specific preprocessing, experiment execution, performance evaluation, and result generation.
+The core EMOO method is maintained separately in the original repository. This repository focuses on dataset-specific preprocessing, experiment execution, performance evaluation, and result generation.
 
 ## What is included here
 - dataset loading
