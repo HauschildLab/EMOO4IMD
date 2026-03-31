@@ -22,29 +22,31 @@ The core EMOO / NSGA-II optimization method is maintained separately in the orig
 ## What is not included here
 - the original EMOO algorithm implementation
 - DEAP / NSGA-II optimizer internals
-- core method development code
+- raw dataset files
 
 ## Repository structure
-- `emoo_bridge.py` -> 
+- `emoo_bridge.py` 
 - `evaluation_utils.py` 
 - `run_heart_failure.py`
 - `run_pima.py`
 - `run_mammographic.py`
 - `data/README.md`
 
-## Expected data files
-Place datasets in:
+## Data requirements
+Raw dataset files are not included in this repository. Before running the experiments, obtain the required datasets separately and place them in the following local paths:
 
 - `./data/heart_failure_clinical_records_dataset.csv`
 - `./data/diabetes.csv`
 - `./data/mammographic_masses.csv`
 
-## Output
-The scripts generate outputs in:
+## Generated outputs
+The scripts are designed to generate result files during execution. Depending on the experiment, outputs may be written to directories such as:
 
 - `./results/heart_failure/`
 - `./results/pima/`
 - `./results/mammographic/`
 
+These outputs can include summary metrics, prediction files, confusion matrices, ROC plots, and Pareto-front exports.
+
 ## Important setup
-Before running the experiments, edit `emoo_bridge.py` to import and call the EMOO optimizer from the original repository.
+Before running the experiments, edit `emoo_bridge.py` so it imports and calls the EMOO optimizer from the original repository.
